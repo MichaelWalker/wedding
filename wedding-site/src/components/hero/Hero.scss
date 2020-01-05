@@ -1,3 +1,43 @@
-.foo {
-  color: red;
+@import '../../styles/constants';
+@import '../../styles/mixins';
+
+.hero {
+  background-image: url("/static/images/hero-image.jpg");
+  background-size: cover;
+  background-position: 25%;
+  height: 90vh;
+  position: relative;
+  @include centeredContent;
+
+  .overlay {
+    @include coversParent;
+    background: $color-dark;
+    opacity: 0.5;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    border-top: $color-light 1px solid;
+    border-bottom: $color-light 1px solid;
+    padding: $spacing-medium 0;
+    text-align: center;
+
+    .title {
+      @include title;
+      color: white;
+      margin-bottom: $spacing-small;
+    }
+
+    .date {
+      @include subtitle;
+      color: white;
+      margin-bottom: 5px;
+    }
+
+    .location {
+      @include subtitle;
+      color: white;
+    }
+  }
 }
