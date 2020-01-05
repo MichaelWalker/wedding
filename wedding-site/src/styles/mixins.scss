@@ -39,3 +39,7 @@
   color: $color-dark;
   line-height: 1.3;
 }
+
+@mixin contentPadding() {
+  padding: $spacing-medium;
+}

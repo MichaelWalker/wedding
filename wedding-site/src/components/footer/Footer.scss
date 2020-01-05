@@ -1,0 +1,19 @@
+@import '../../styles/mixins';
+@import '../../styles/constants';
+
+.footer {
+  @include contentPadding;
+  background: $color-dark;
+
+  .description {
+    @include body;
+    color: $color-light;
+    margin-bottom: $spacing-small;
+  }
+
+  .email a {
+    @include body;
+    color: $color-light;
+    text-decoration: none;
+  }
+}

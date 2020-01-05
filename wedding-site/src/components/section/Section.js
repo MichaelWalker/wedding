@@ -6,7 +6,9 @@ export function Section(props) {
     return (
         <section className={props.className ? `section ${props.className}` : "section"}>
             <h2 className="heading">{props.title}</h2>
-            {props.children}
+            <div className="content">
+                {props.children}
+            </div>
         </section>
     );
 }
