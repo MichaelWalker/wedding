@@ -1,8 +1,9 @@
 import React from "react"
+import Hero from "../components/hero/Hero";
 
 function IndexPage() {
     return (
-        <div>Hello World</div>
+        <Hero/>
     );
 }
 
