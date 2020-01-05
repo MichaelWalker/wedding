@@ -1,0 +1,10 @@
+@import '../../styles/mixins';
+
+.section {
+  padding: $spacing-medium;
+
+  .heading {
+    @include heading;
+    margin-bottom: $spacing-small;
+  }
+}
