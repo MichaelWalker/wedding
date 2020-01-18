@@ -1,0 +1,12 @@
+@import '../../styles/mixins';
+@import '../../styles/constants';
+
+.button {
+  @include buttonText;
+  display: block;
+  text-align: center;
+  border: 1px $color-light solid;
+  color: $color-light;
+  padding: $spacing-small;
+  text-decoration: none;
+}

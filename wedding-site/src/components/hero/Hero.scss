@@ -16,28 +16,38 @@
   }
 
   .content {
+    @include contentPadding;
     position: relative;
     z-index: 1;
     border-top: $color-light 1px solid;
     border-bottom: $color-light 1px solid;
     padding: $spacing-medium 0;
     text-align: center;
+  }
 
-    .title {
-      @include title;
-      color: white;
-      margin-bottom: $spacing-small;
-    }
+  .title {
+    @include title;
+    color: white;
+    margin-bottom: $spacing-small;
+  }
 
-    .date {
-      @include subtitle;
-      color: white;
-      margin-bottom: 5px;
-    }
+  .date {
+    @include subtitle;
+    color: white;
+    margin-bottom: 5px;
+  }
 
-    .location {
-      @include subtitle;
-      color: white;
-    }
+  .location {
+    @include subtitle;
+    color: white;
+  }
+
+  .buttonContainer {
+    position: absolute;
+    z-index: 1;
+    bottom: $spacing-medium;
+    left: 0;
+    right: 0;
+    @include contentPadding;
   }
 }
