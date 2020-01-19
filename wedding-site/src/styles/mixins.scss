@@ -33,6 +33,12 @@
   color: $color-dark;
 }
 
+@mixin subheading() {
+  font-size: 16px;
+  font-family: $font-title;
+  color: $color-dark;
+}
+
 @mixin body() {
   font-size: 16px;
   font-family: $font-body;

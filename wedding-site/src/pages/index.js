@@ -4,6 +4,7 @@ import "../styles/reset.scss";
 import {Introduction} from "../components/introduction/Introduction";
 import {Footer} from "../components/footer/Footer";
 import {Venue} from "../components/venue/venue";
+import {Travel} from "../components/travel/travel";
 
 function IndexPage() {
     return (
@@ -11,6 +12,7 @@ function IndexPage() {
             <Hero/>
             <Introduction/>
             <Venue/>
+            <Travel/>
             <Footer/>
         </main>
     );

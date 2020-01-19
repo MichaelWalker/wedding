@@ -1,0 +1,18 @@
+@import '../../styles/mixins';
+
+.travel {
+  h3 {
+    @include subheading;
+    margin-top: $spacing-small;
+  }
+
+  h4 {
+    @include body;
+    margin-top: $spacing-small;
+    font-weight: bold;
+  }
+
+  p {
+    @include body;
+  }
+};
