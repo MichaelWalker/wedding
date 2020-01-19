@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 function Banner(props) {
     return (
-        <section className="banner" style={{"background-image": `url("${props.image}")`}}>
+        <section className="banner" style={{backgroundImage: `url("${props.image}")`}}>
             <div className="titleContainer">
                 <h1>{props.title}</h1>
             </div>

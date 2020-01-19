@@ -5,7 +5,7 @@ import './Section.scss';
 export function Section(props) {
     return (
         <section className={props.className ? `section ${props.className}` : "section"}>
-            <h2 className="heading">{props.title}</h2>
+            {props.title && <h2 className="heading">{props.title}</h2>}
             <div className="content">
                 {props.children}
             </div>
@@ -14,7 +14,7 @@ export function Section(props) {
 }
 
 Section.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     className: PropTypes.string,
 };
 
