@@ -1,0 +1,22 @@
+@import '../../styles/mixins';
+@import '../../styles/constants';
+
+.banner {
+  width: 100%;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+
+  .titleContainer {
+    position: absolute;
+    bottom: -20px;
+    left: $gutter-width;
+    padding: $spacing-medium;
+    background-color: $color-dark;
+
+    h1 {
+      @include title;
+      color: $color-light;
+    }
+  }
+}
