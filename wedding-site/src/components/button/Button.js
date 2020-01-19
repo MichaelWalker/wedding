@@ -10,6 +10,12 @@ export function LinkButton(props) {
     );
 }
 
+export function SubmitButton(props) {
+    return (
+        <button className="button">{props.children}</button>
+    );
+}
+
 LinkButton.propTypes = {
     href: PropTypes.string.isRequired,
 };
